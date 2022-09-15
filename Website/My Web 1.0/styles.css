@@ -141,11 +141,12 @@ a.active,a:hover {
 
   .project-desc{
     display: flex;
-    border-top: 1px solid black;
     padding-top: 15px;
   }
 
-  .project-tile > a > img{
+  .project-tile > a > img {
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
     height: 100px;
   }
 
