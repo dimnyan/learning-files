@@ -125,9 +125,12 @@ a.active,a:hover {
 
   .project-tile a{
     display: flex;
+    flex-direction: column;
     border-radius: 10%;
-    height: fit-content;
-    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    height: 38vh;
+    width: 30vh;
     background: linear-gradient(120deg, rgba(255,255,255,0.5) 0%, rgba(186,186,255,0.5) 100%);
     border: 1px solid #6565ff65;
   }
@@ -137,6 +140,7 @@ a.active,a:hover {
   }
 
   .project-desc{
+    display: flex;
     border-top: 1px solid black;
     padding-top: 15px;
   }
