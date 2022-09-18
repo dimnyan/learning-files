@@ -95,7 +95,6 @@ a.active,a:hover {
   margin: 0 auto;
   gap: 30px;
   background: rgb(255,255,255);
-  background: linear-gradient(120deg, rgba(255,255,255,1) 0%, rgba(210,210,255,1) 50%, rgba(210,210,255,1) 100%);
   
 }
 
@@ -154,56 +153,123 @@ a.active,a:hover {
 
 
 @media (max-width: 1000px) {
-    nav{
-      justify-content: space-between;
-    }
+  nav{
+    justify-content: space-between;
+  }
+  #profesi-sec {
+    height: fit-content;
   }
   label.logo {
     padding-left: 15px;
   }
+}
+
 
 @media (max-width: 952px) {
-  nav {
-    justify-content: space-between;
-  }
-  label.logo {
-    font-size: 30px;
-    padding-right: 20px;
-  }
-  nav ul li a {
-    font-size: 16px;
-  }
-  #welcome-section, .welcome-class, #projects, #project-tiles{
-    height: 400px;
-  }
-  .project-tile a {
-    height: 250px;
-    width: 17vh;
-  }
-  #links {
-    height: 280px;
-  }
+nav {
+  justify-content: space-between;
+}
+label.logo {
+  font-size: 30px;
+  padding-right: 20px;
+}
+nav ul li a {
+  font-size: 16px;
+}
+#welcome-section, .welcome-class, #projects, #project-tiles{
+  height: 300px;
+}
+.project-tile a {
+  height: 250px;
+  width: 31vh;
+}
+#links {
+  height: 280px;
+}
 }
 
 @media (max-width: 858px) {
-    .checkbtn {
-        display: block;
-        margin: auto 0 auto;
-        padding-left: 20px;
-    }
-    ul {
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        background: white;
-        top: 80px;
-        left: -100%;
-        text-align: center;
-        transition: all .5s;
-    }
-    nav ul li {
-        display: block;
-        line-height: 30px;
-        margin: 50px 0;
-    }
+  .checkbtn {
+      display: block;
+      margin: auto 0 auto;
+      padding-left: 15px;
+      padding-right: 15px;
+  }
+  #profesi-sec {
+    height: fit-content;
+  }
+  nav ul {
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      background: white;
+      top: 60px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+  }
+  nav ul li {
+      display: block;
+      line-height: 30px;
+      margin: 50px 0;
+  }
+}
+
+@media (max-width: 620px) {
+#ed-ex {
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin: 0 auto;
+}
+.profesi-main {
+  justify-content: center;
+  width: 100%;
+}
+}
+
+@media (max-width: 455px) {
+#welcome-section, .welcome-class, #projects, #project-tiles {
+  height: 386px;
+}
+.project-tile a {
+  height: 220px;
+  width: 27vh;
+}
+#projects {
+  height: 40vh;
+}
+.project-tile:not(:first-of-type) {
+  margin-left: 10px;
+  margin-right: 20px;
+}
+.project-tile {
+  margin: 10px;
+}
+.project-tile:first-of-type {
+  margin-left: 90px;
+}
+#project-tiles {
+  display: flex;
+  overflow: scroll;
+  overflow-y: hidden;
+  padding-left: 50px;
+  height: 300px;
+}
+h2 {
+  margin-bottom: 20px;
+}
+#links {
+  height: fit-content;
+}
+#links h2 {
+  padding-bottom: 10px;
+}
+#links a:last-of-type {
+  padding-bottom: 20px;
+}
+#links a {
+  font-size: 20px;
+  letter-spacing: 0px;
+}
 }
