@@ -1,0 +1,346 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    letter-spacing: 2px;
+    /* background-image: url("gamb1.jpg"); */
+    background-size: cover;
+    background: white;
+}
+
+h2{
+    text-align: center;
+    margin: 20px 0 34px;
+}
+
+/* NAVBAR */
+
+nav {
+    height: 60px;
+    background: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.logo {
+  line-height: 60px;
+  font-size: 25px;
+  color: #6565ff;
+  font-weight: bolder;
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: #6565ff;
+    float: right;
+    line-height: 60px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+nav ul li {
+    line-height: 60px;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+nav ul li a {
+    /* text-transform: uppercase; */
+    font-size: 16px;
+    color: rgb(46, 46, 46);
+    padding: 7px 13px;
+    border-radius: 3px;
+    /* font-weight: bold; */
+}
+
+a.active,a:hover {
+    background: black;
+    border-radius: 5px;
+    color: white;
+    transition: 0.5s;
+}
+
+nav ul li a {
+    font-size: 20px;
+}
+
+a.active,a:hover {
+    background: none;
+    color: #6565ff;
+}
+
+#check:checked ~ ul {
+    left: 0;
+}
+
+/* WELCOME SECTION */
+
+  #welcome-section{
+    background: rgb(255,255,255);
+    background: linear-gradient(120deg, rgba(255,255,255,1) 0%, rgba(210,210,255,1) 50%, rgba(210,210,255,1) 100%);
+    height: 60vh;
+  }
+
+  .welcome-class{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 60vh;
+    gap: 20px;
+  }
+  
+  #opening-word{
+    padding-left: 15px;
+  }
+  
+  #opening-word p{
+    margin-top: 15px;
+  }
+
+  #opening-word h1 {
+    font-size: 25px;
+    font-weight: bold;
+  }
+
+  #opening-word .hello{
+    font-size: 15px;
+    padding-bottom: 5px;
+  }
+
+  #pfp{
+    width: 200px;
+    padding-right: 15px;
+  }
+
+  /* PROFESI */
+  #profesi-sec {
+    height: 66vh;
+    width: 100%;
+    color: #6565ff;
+  }
+
+  #ed-ex {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  #profesi-sec h2 {
+    text-align: center;
+    color: black;
+  }
+
+  .profesi-main {
+    width: 40%;
+    padding: 10px;
+  }
+
+  .profesi-main h3{
+    font-size: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+  }
+
+  .job-desc {
+    margin-left: 20px;
+  }
+
+  .profesi-sub {
+    padding: 10px;
+  }
+
+  .profesi-sub h4{
+    padding-bottom: 5px;
+    font-size: large;
+  }
+
+  .profesi-sub ul, .profesi-sub p{
+    padding: 5px;
+    color: black;
+  }
+
+  /* SOCIAL MEDIA LINKS */
+
+  #links{
+    background: rgb(255,255,255);
+    background: linear-gradient(120deg, rgba(255,255,255,1) 0%, rgba(210,210,255,1) 50%, rgba(210,210,255,1) 100%);
+    height: 40vh;
+    margin-block: 0;
+  }
+
+  #links h2 {
+    padding-top: 10px;
+  }
+  
+  #links > a{
+    display: flex;
+    font-size: 30px;
+    text-decoration: none;
+    color: #6565ff;
+    margin: 10px auto 0;
+    height: fit-content;
+    width: 140px;
+  }
+
+  #links > a > p {
+    font-size: 15px;
+    margin: auto 10px auto;
+  }
+
+
+/* FOOTER */
+    
+  footer {
+      background-color: #6565ff;
+      display: flex;
+      justify-content: center;
+  }
+  
+  footer,
+  footer a {
+    color: white;
+  }
+  
+  address {
+    text-align: center;
+    padding: 0.5em;
+  }
+
+  address a:hover {
+    color: black;
+  }
+
+  @media (max-width: 1000px) {
+    nav{
+      justify-content: space-between;
+    }
+    #profesi-sec {
+      height: fit-content;
+    }
+    label.logo {
+      padding-left: 15px;
+    }
+  }
+
+
+@media (max-width: 952px) {
+  nav {
+    justify-content: space-between;
+  }
+  label.logo {
+    font-size: 30px;
+    padding-right: 20px;
+  }
+  nav ul li a {
+    font-size: 16px;
+  }
+  #welcome-section, .welcome-class, #projects, #project-tiles{
+    height: 300px;
+  }
+  .project-tile a {
+    height: 250px;
+    width: 31vh;
+  }
+  #links {
+    height: 280px;
+  }
+}
+
+@media (max-width: 858px) {
+    .checkbtn {
+        display: block;
+        margin: auto 0 auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    #profesi-sec {
+      height: fit-content;
+    }
+    nav ul {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: white;
+        top: 60px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li {
+        display: block;
+        line-height: 30px;
+        margin: 50px 0;
+    }
+}
+
+@media (max-width: 620px) {
+  #ed-ex {
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .profesi-main {
+    justify-content: center;
+    width: 100%;
+  }
+}
+
+@media (max-width: 455px) {
+  #welcome-section, .welcome-class, #projects, #project-tiles {
+    height: 386px;
+  }
+  .project-tile a {
+    height: 220px;
+    width: 27vh;
+  }
+  #projects {
+    height: 40vh;
+  }
+  .project-tile:not(:first-of-type) {
+    margin-left: 10px;
+    margin-right: 20px;
+  }
+  .project-tile {
+    margin: 10px;
+  }
+  .project-tile:first-of-type {
+    margin-left: 90px;
+  }
+  #project-tiles {
+    display: flex;
+    overflow: scroll;
+    overflow-y: hidden;
+    padding-left: 50px;
+  }
+  h2 {
+    margin-bottom: 20px;
+  }
+  #links {
+    height: fit-content;
+  }
+  #links h2 {
+    padding-bottom: 10px;
+  }
+  #links a:last-of-type {
+    padding-bottom: 20px;
+  }
+  #links a {
+    font-size: 20px;
+    letter-spacing: 0px;
+  }
+}
