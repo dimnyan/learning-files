@@ -128,7 +128,7 @@ a.active,a:hover {
 
   /* PROFESI */
   #profesi-sec {
-    height: 66vh;
+    height: 120vh;
     width: 100%;
     color: #6565ff;
   }
@@ -157,7 +157,8 @@ a.active,a:hover {
   }
 
   .job-desc {
-    margin-left: 20px;
+    margin-left: 15px;
+    margin-bottom: 20px;
   }
 
   .profesi-sub {
@@ -178,10 +179,12 @@ a.active,a:hover {
     font-size: smaller;
     font-weight: bolder;
     color: rgb(223, 221, 221);
+    margin-left: 0;
   }
 
   .bold {
     font-weight: bolder;
+    margin-left: 14px;
   }
 
   /* SOCIAL MEDIA LINKS */
