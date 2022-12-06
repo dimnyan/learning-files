@@ -17,7 +17,20 @@ public class Array4
         for (i = 0; i < intTipeMobil; i++)
         {
             System.out.printf("Tipe Mobil %d: ", i+1);
-            namaMobil[intTipeMobil] = scanner.nextLine();
+            namaMobil[i] = scanner.nextLine();
         }
+
+        System.out.printf("%nTerdapat Data Sebanyak: %d%n", intTipeMobil);
+        System.out.printf("Data yang tercatat adalah: ");
+        for (i = 0; i < intTipeMobil; i++) 
+        {
+            if (i > 0)
+            {
+                System.out.printf(", ");
+            }
+            System.out.printf("%s", namaMobil[i]);
+        }
+
+
     }
 }
