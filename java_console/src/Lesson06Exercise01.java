@@ -6,6 +6,7 @@ public class Lesson06Exercise01
 	{
         Scanner scanner = new Scanner(System.in);
         String[] namaSiswa;
+        String temp;
         int i, j, hasilBanding;
 
         System.out.printf("%nProgram mengurutkan nama siswa%n");
@@ -24,20 +25,24 @@ public class Lesson06Exercise01
         }
 
         
-
+        
 
         for(i = 0; i < intBanyakSiswa; i++)
         {
-            for (j = 1; j < intBanyakSiswa; j++)
+            for (j = i + 1; j < intBanyakSiswa; j++)
             {
                 hasilBanding = namaSiswa[i].compareToIgnoreCase(namaSiswa[j]);
+                if (hasilBanding > 0)
+                {
+                    temp = namaSiswa[i];
+                    namaSiswa[i] = namaSiswa[j];
+                    namaSiswa[j] = temp;
+                }
                 System.out.printf("%d%n", hasilBanding);
             }
         }
 
-        // if(hasilBanding > 0){
-
-        // }
+        
 
 
         System.out.printf("%nNama Siswa di urutkan berdasarkan abjad adalah:%n");
